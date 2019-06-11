@@ -23,10 +23,12 @@ import {getCurrentProfile} from '../../actions/profileActions';
          }else{
              if(Object.keys(profile).length > 0){
                  dashboardContent = <div>
-             <p className='lead text-muted'>Welcome {user.name}</p>
+             <p className='lead text-muted'>Welcome {profile.name}</p>
                      <p>Email: {profile.email}</p>
                      <p>Bio: {profile.description}</p>
-
+                     <div style={{width: '35vw', height: '35vh'}}>
+                 <img alt={profile.name} src={`http://launchpartner.s3.amazonaws.com/${profile.image}`} />
+                     </div>
 
                  </div>
              }else {
