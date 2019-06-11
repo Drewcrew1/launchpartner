@@ -1,0 +1,6 @@
+if(process.env.NODE_ENV === 'production'){
+    module.exports = require('./keys_prod');
+}else{
+    module.exports = require('./key_dev');
+}
+//final merge with 10 branch 11 became corrupt
