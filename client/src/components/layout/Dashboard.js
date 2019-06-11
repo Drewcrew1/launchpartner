@@ -26,7 +26,7 @@ import {getCurrentProfile} from '../../actions/profileActions';
              <p className='lead text-muted'>Welcome {profile.name}</p>
                      <p>Email: {profile.email}</p>
                      <p>Bio: {profile.description}</p>
-                     <div style={{width: '35vw', height: '35vh'}}>
+                     <div style={{width: '15vw', height: '15vh'}}>
                  <img alt={profile.name} src={`http://launchpartner.s3.amazonaws.com/${profile.image}`} />
                      </div>
 
