@@ -11,8 +11,8 @@ const formidable = require('formidable');
 const fs = require('fs');
 const AWS = require('aws-sdk');
 const s3 = new AWS.S3({
-    accessKeyId:'AKIAJMEO2ZRQT3VEETGQ',
-    secretAccessKey:'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'
+    accessKeyId: process.env.ACCESS_KEY_ID,
+    secretAccessKey: process.env.SECRET_ACCESS_KEY
 });
 //@route get api/users/test
 //@access Public
